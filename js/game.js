@@ -11,10 +11,10 @@
 //themes
 var theme_settings = [
 	{
-		strokeColor:"#ccc",
-		biscuitColor:"#EE9B33",
-		pillColor:"#EE9B33",
-		gateColor:"#5386F1",
+		strokeColor:"#1b1950ff",
+		biscuitColor:"#ff2221ff",
+		pillColor:"#ff2221ff",
+		gateColor:"#e4e6af",
 		user:["assets/item_theme8_user.png"],
 		ghosts:[
 			"assets/item_theme8_monster1.png",
@@ -1076,13 +1076,13 @@ function resizeMap(){
 
 	if(viewport.isLandscape){
 		gameScoreTxt.x = offset.x + 50;
-		gameScoreTxt.y = canvasH/100 * 44;
+		gameScoreTxt.y = canvasH/100 * 30;
 
 		gameLevelTxt.x = offset.x + 50;
-		gameLevelTxt.y = canvasH/100 * 48;
+		gameLevelTxt.y = canvasH/100 * 34;
 
 		gameLivesContainer.x = offset.x + 50;
-		gameLivesContainer.y = canvasH/100 * 52;
+		gameLivesContainer.y = canvasH/100 * 38;
 
 		gameCollectContainer.x = (canvasW - offset.x) - 50;
 		gameCollectContainer.y = canvasH/100 * 50;

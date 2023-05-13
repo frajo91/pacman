@@ -69,6 +69,8 @@ function buildGameCanvas(){
 	
 	bg = new createjs.Bitmap(loader.getResult('background'));
 	bgP = new createjs.Bitmap(loader.getResult('backgroundP'));
+
+	bg2 = new createjs.Bitmap(loader.getResult('background2'));
 	
 	logo = new createjs.Bitmap(loader.getResult('logo'));
 	logoP = new createjs.Bitmap(loader.getResult('logoP'));
@@ -100,21 +102,21 @@ function buildGameCanvas(){
 	
 	//game
 	gameStatusTxt = new createjs.Text();
-	gameStatusTxt.font = "50px upheaval_tt_brkregular";
-	gameStatusTxt.color = "#fff";
+	gameStatusTxt.font = "50px Brandon_blk_it";
+	gameStatusTxt.color = "#ff2221ff";
 	gameStatusTxt.textAlign = "center";
 	gameStatusTxt.textBaseline='alphabetic';
 
 	gameScoreTxt = new createjs.Text();
-	gameScoreTxt.font = "25px upheaval_tt_brkregular";
-	gameScoreTxt.color = '#fff';
+	gameScoreTxt.font = "25px Brandon_blk_it";
+	gameScoreTxt.color = '#ff2221ff';
 	gameScoreTxt.textAlign = "center";
 	gameScoreTxt.textBaseline='alphabetic';
 	gameScoreTxt.text = '';
 
 	gameLevelTxt = new createjs.Text();
-	gameLevelTxt.font = "25px upheaval_tt_brkregular";
-	gameLevelTxt.color = '#fff';
+	gameLevelTxt.font = "25px Brandon_blk_it";
+	gameLevelTxt.color = '#ff2221ff';
 	gameLevelTxt.textAlign = "center";
 	gameLevelTxt.textBaseline='alphabetic';
 	gameLevelTxt.text = '';
@@ -319,7 +321,7 @@ function buildGameCanvas(){
 	}
 	
 	buttonLocalContainer.addChild(buttonLocal, buttonOnline);
-	mainContainer.addChild(logo, logoP, buttonStart, buttonLocalContainer);
+	mainContainer.addChild(bg, bgP,logo, logoP, buttonStart, buttonLocalContainer);
 	selectContainer.addChild(buttonLeft, buttonRight, buttonLeftSmall, buttonRightSmall, buttonSelect);
 	mapWrapContainer.addChild(mapDrawContainer, mapIconsContainer, mapCollectContainer, mapPlayersContainer, mapLabelsContainer);
 	mapContainer.addChild(mapWrapContainer, mapMultiPlayersContainer, mapMultiLabelsContainer, itemBroken, editMapContainer);
@@ -330,7 +332,7 @@ function buildGameCanvas(){
 		resultContainer.addChild(resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
 	}
 	
-	canvasContainer.addChild(bg, bgP, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
+	canvasContainer.addChild(bg2, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
 	stage.addChild(canvasContainer);
 	
 	changeViewport(viewport.isLandscape);
@@ -365,6 +367,7 @@ function changeCanvasViewport(){
 	if(canvasContainer!=undefined){
 		if(viewport.isLandscape){
 			bg.visible = true;
+			bg2.visible=true;
 			bgP.visible = false;
 
 			logo.visible = true;
@@ -444,6 +447,7 @@ function changeCanvasViewport(){
 			$('#roomLogs').attr('rows', 10);
 		}else{
 			bg.visible = false;
+			bg2.visible=false;
 			bgP.visible = true;
 
 			logo.visible = false;

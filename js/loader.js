@@ -22,6 +22,7 @@
 	manifest=[
 			{src:'assets/background.png', id:'background'},
 			{src:'assets/background_p.png', id:'backgroundP'},
+			{src:'assets/background2.png', id:'background2'},
 			{src:'assets/logo.png', id:'logo'},
 			{src:'assets/logo_p.png', id:'logoP'},
 			{src:'assets/button_start.png', id:'buttonStart'},
