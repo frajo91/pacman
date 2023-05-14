@@ -240,26 +240,26 @@ var mapSettings = {
 
 //game text display
 var textDisplay = {
-	gameReady:'GET READY!',
-	gameReadyLevel:'LEVEL [NUMBER]',
+	gameReady:'¡PREPARADO!',
+	gameReadyLevel:'NIVEL [NUMBER]',
 	gameCountdown:["1","2","3"],
-	gameOver:'GAME OVER',
-	gameClear:'LEVEL CLEAR',
-	gameScore:"SCORE : [NUMBER]PTS",
-	gameLevel:"LEVEL : [NUMBER]",
+	gameOver:'FIN DEL JUEGO',
+	gameClear:'BORRAR NIVEL',
+	gameScore:"PUNTOS : [NUMBER]PTS",
+	gameLevel:"NIVEL : [NUMBER]",
 	multiplayerName:"P[NUMBER] : ",
 	multiplayerIndicator:"P[NUMBER]",
-	exitTitle:'Exit Game',
-	exitMessage:'Are you sure you want\nto quit game?',
-	share:'Share your score:',
-	resultTitle:'GAME OVER',
+	exitTitle:'Salir del juego',
+	exitMessage:'¿Estás seguro de que\nquieres salir del juego?',
+	share:'Comparte tu puntuación:',
+	resultTitle:'FIN DEL JUEGO',
 	resultDesc:'[NUMBER]PTS',
 }
 
 //Social share, [SCORE] will replace with game score
-var shareEnable = true; //toggle share
-var shareTitle = 'Highscore on Pac Man is [SCORE]pts';//social share score title
-var shareMessage = '[SCORE]pts is mine new highscore on Pac Man game! Try it now!'; //social share score message
+var shareEnable = false; //toggle share
+var shareTitle = 'La puntuación más alta en Pac Man es [SCORE]pts';//social share score title
+var shareMessage = '![SCORE]pts es mi nueva puntuación en el juego Pac Man!¡Pruebalo ahora!'; //social share score message
 
 /*!
  *

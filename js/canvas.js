@@ -164,13 +164,13 @@ function buildGameCanvas(){
 		$.players[n] = new createjs.Container();
 
 		$.players["name" + n] = new createjs.Text();
-		$.players["name" + n].font = "25px upheaval_tt_brkregular";
+		$.players["name" + n].font = "25px Brandon_blk_it";
 		$.players["name" + n].color = "#fff";
 		$.players["name" + n].textAlign = isEven(n) == true ? "left" : "right";
 		$.players["name" + n].textBaseline='alphabetic';
 
 		$.players["score" + n] = new createjs.Text();
-		$.players["score" + n].font = "25px upheaval_tt_brkregular";
+		$.players["score" + n].font = "25px Brandon_blk_it";
 		$.players["score" + n].color = "#fff";
 		$.players["score" + n].textAlign = isEven(n) == true ? "left" : "right";
 		$.players["score" + n].textBaseline='alphabetic';
@@ -220,21 +220,21 @@ function buildGameCanvas(){
 	centerReg(buttonContinue);
 	
 	resultShareTxt = new createjs.Text();
-	resultShareTxt.font = "35px upheaval_tt_brkregular";
+	resultShareTxt.font = "35px Brandon_blk_it";
 	resultShareTxt.color = '#fff';
 	resultShareTxt.textAlign = "center";
 	resultShareTxt.textBaseline='alphabetic';
 	resultShareTxt.text = textDisplay.share;
 	
 	resultTitleTxt = new createjs.Text();
-	resultTitleTxt.font = "60px upheaval_tt_brkregular";
+	resultTitleTxt.font = "60px Brandon_blk_it";
 	resultTitleTxt.color = '#fff';
 	resultTitleTxt.textAlign = "center";
 	resultTitleTxt.textBaseline='alphabetic';
 	resultTitleTxt.text = textDisplay.resultTitle;
 	
 	resultDescTxt = new createjs.Text();
-	resultDescTxt.font = "65px upheaval_tt_brkregular";
+	resultDescTxt.font = "65px Brandon_blk_it";
 	resultDescTxt.color = '#43B3EA';
 	resultDescTxt.textAlign = "center";
 	resultDescTxt.textBaseline='alphabetic';
@@ -292,14 +292,14 @@ function buildGameCanvas(){
 	centerReg(buttonCancel);
 	
 	popTitleTxt = new createjs.Text();
-	popTitleTxt.font = "60px upheaval_tt_brkregular";
+	popTitleTxt.font = "60px Brandon_blk_it";
 	popTitleTxt.color = "#fff";
 	popTitleTxt.textAlign = "center";
 	popTitleTxt.textBaseline='alphabetic';
 	popTitleTxt.text = textDisplay.exitTitle;
 	
 	popDescTxt = new createjs.Text();
-	popDescTxt.font = "40px upheaval_tt_brkregular";
+	popDescTxt.font = "40px Brandon_blk_it";
 	popDescTxt.lineHeight = 45;
 	popDescTxt.color = "#fff";
 	popDescTxt.textAlign = "center";
@@ -314,7 +314,7 @@ function buildGameCanvas(){
 	nameContainer = new createjs.Container();
 
 	gameLogsTxt = new createjs.Text();
-	gameLogsTxt.font = "30px upheaval_tt_brkregular";
+	gameLogsTxt.font = "30px Brandon_blk_it";
 	gameLogsTxt.color = "#ccc";
 	gameLogsTxt.textAlign = "center";
 	gameLogsTxt.textBaseline='alphabetic';
@@ -427,7 +427,7 @@ function changeCanvasViewport(){
 			resultTitleTxt.y = canvasH/100 * 35;
 	
 			resultDescTxt.x = canvasW/2;
-			resultDescTxt.y = canvasH/100 * 42;
+			resultDescTxt.y = canvasH/100 * 44;
 			
 			//exit
 			itemExit.visible = true;
