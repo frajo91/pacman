@@ -1085,7 +1085,7 @@ function resizeMap(){
 		gameLivesContainer.y = canvasH/100 * 38;
 
 		gameCollectContainer.x = (canvasW - offset.x) - 50;
-		gameCollectContainer.y = canvasH/100 * 50;
+		gameCollectContainer.y = canvasH/100 * 20;
 	}else{
 		gameLevelTxt.textAlign = "right";
 

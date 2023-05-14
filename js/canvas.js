@@ -71,9 +71,12 @@ function buildGameCanvas(){
 	bgP = new createjs.Bitmap(loader.getResult('backgroundP'));
 
 	bg2 = new createjs.Bitmap(loader.getResult('background2'));
+	bgP2=new createjs.Bitmap(loader.getResult('backgroundP2'));
 	
 	logo = new createjs.Bitmap(loader.getResult('logo'));
 	logoP = new createjs.Bitmap(loader.getResult('logoP'));
+
+	abbott=new createjs.Bitmap(loader.getResult('Abbott'));
 
 	buttonStart = new createjs.Bitmap(loader.getResult('buttonStart'));
 	centerReg(buttonStart);
@@ -264,6 +267,7 @@ function buildGameCanvas(){
 	centerReg(buttonExit);
 	buttonSettings = new createjs.Bitmap(loader.getResult('buttonSettings'));
 	centerReg(buttonSettings);
+
 	
 	createHitarea(buttonFullscreen);
 	createHitarea(buttonSoundOn);
@@ -332,7 +336,7 @@ function buildGameCanvas(){
 		resultContainer.addChild(resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
 	}
 	
-	canvasContainer.addChild(bg2, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
+	canvasContainer.addChild(bg2,bgP2,abbott, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
 	stage.addChild(canvasContainer);
 	
 	changeViewport(viewport.isLandscape);
@@ -369,6 +373,7 @@ function changeCanvasViewport(){
 			bg.visible = true;
 			bg2.visible=true;
 			bgP.visible = false;
+			bgP2.visible = false;
 
 			logo.visible = true;
 			logoP.visible = false;
@@ -449,6 +454,7 @@ function changeCanvasViewport(){
 			bg.visible = false;
 			bg2.visible=false;
 			bgP.visible = true;
+			bgP2.visible = true;
 
 			logo.visible = false;
 			logoP.visible = true;
@@ -541,6 +547,9 @@ function resizeCanvas(){
 		
 		buttonSettings.x = (canvasW - offset.x) - 50;
 		buttonSettings.y = offset.y + 45;
+
+		abbott.x=offset.x+50;
+		abbott.y=offset.y + 45;
 		
 		var distanceNum = 60;
 		var nextCount = 0;
