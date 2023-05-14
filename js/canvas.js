@@ -78,6 +78,7 @@ function buildGameCanvas(){
 
 	abbott=new createjs.Bitmap(loader.getResult('Abbott'));
 
+
 	buttonStart = new createjs.Bitmap(loader.getResult('buttonStart'));
 	centerReg(buttonStart);
 
@@ -336,7 +337,7 @@ function buildGameCanvas(){
 		resultContainer.addChild(resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
 	}
 	
-	canvasContainer.addChild(bg2,bgP2,abbott, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
+	canvasContainer.addChild(bg2,bgP2, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, abbott,guideline);
 	stage.addChild(canvasContainer);
 	
 	changeViewport(viewport.isLandscape);
