@@ -75,7 +75,7 @@
 		}
 
 		for(var h=0; h<theme_settings[n].pillimage.length; h++){
-			manifest.push({src:theme_settings[n].pillimage[h], id:'pillimage_'+n+'_'+n});
+			manifest.push({src:theme_settings[n].pillimage[h], id:'pillimage_'+n});
 		}
 	}
 	
