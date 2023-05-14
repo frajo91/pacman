@@ -73,6 +73,10 @@
 		for(var f=0; f<theme_settings[n].collection.length; f++){
 			manifest.push({src:theme_settings[n].collection[f], id:'collection_'+n+'_'+f});
 		}
+
+		for(var h=0; h<theme_settings[n].pillimage.length; h++){
+			manifest.push({src:theme_settings[n].pillimage[h], id:'pillimage_'+n});
+		}
 	}
 	
 	if ( typeof addScoreboardAssets == 'function' ) { 

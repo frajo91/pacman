@@ -27,6 +27,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_egg.png"
+		],
+		pillimage:[
+			"assets/pedialyte.png"
 		]
 	},
 	{
@@ -43,6 +46,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_milk.png"
+		],
+		pillimage:[
+			"assets/item_heart.png"
 		]
 	},
 	{
@@ -58,6 +64,9 @@ var theme_settings = [
 			"assets/item_theme3_monster4.png",
 		],
 		collection:[
+			"assets/item_heart.png"
+		],
+		pillimage:[
 			"assets/item_heart.png"
 		]
 	},
@@ -75,6 +84,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_wasabi.png"
+		],
+		pillimage:[
+			"assets/item_heart.png"
 		]
 	},
 	{
@@ -94,6 +106,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_pokemon.png"
+		],
+		pillimage:[
+			"assets/item_heart.png"
 		]
 	},
 	{
@@ -107,6 +122,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_gear.png"
+		],
+		pillimage:[
+			"assets/item_heart.png"
 		]
 	},
 	{
@@ -122,6 +140,9 @@ var theme_settings = [
 		],
 		collection:[
 			"assets/item_piggybank.png"
+		],
+		pillimage:[
+			"assets/item_heart.png"
 		]
 	},
 ];
@@ -1868,8 +1889,10 @@ function insertMapIcons(map, alpha){
 				mapIconsContainer.addChild(newBiscuit);
 			}else if(map[h][w] == mapType.pill){
 				//pill
-				var newPill = new createjs.Shape();	
-				newPill.graphics.beginFill(theme_settings[gameData.themeNum].pillColor).drawCircle(0, 0, mapSettings.pillSize);
+				//var newPill = new createjs.Shape();	
+				//newPill.graphics.beginFill(theme_settings[gameData.themeNum].pillColor).drawCircle(0, 0, mapSettings.pillSize);
+				var newPill = new createjs.Bitmap(loader.getResult('pillimage_'+gameData.themeNum));
+				centerReg(newPill);
 				newPill.x = gameData.squareSize * w;
 				newPill.y = gameData.squareSize * h;
 				newPill.alpha = alpha;
