@@ -598,7 +598,7 @@ function resizeCanvas(){
 		}
 
 		if(mapSettings.screenControlSide){
-			touchMoveContainer.x = (canvasW - offset.x) - 130;
+			touchMoveContainer.x = (offset.x) + 130;
 			touchMoveContainer.y = (canvasH - offset.y) - 130;
 		}else{
 			touchMoveContainer.x = (offset.x) + 130;
