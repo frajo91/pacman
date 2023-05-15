@@ -244,7 +244,7 @@ var textDisplay = {
 	gameReadyLevel:'NIVEL [NUMBER]',
 	gameCountdown:["1","2","3"],
 	gameOver:'FIN DEL JUEGO',
-	gameClear:'BORRAR NIVEL',
+	gameClear:'REINICIANDO NIVEL',
 	gameScore:"PUNTOS : [NUMBER]PTS",
 	gameLevel:"NIVEL : [NUMBER]",
 	multiplayerName:"P[NUMBER] : ",
