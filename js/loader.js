@@ -50,6 +50,8 @@
 			{src:'assets/button_continue.png', id:'buttonContinue'},
 			{src:'assets/item_pop.png', id:'itemPop'},
 			{src:'assets/item_pop_p.png', id:'itemPopP'},
+			{src:'assets/item_pop2.png', id:'itemPop2'},
+			{src:'assets/item_pop_p2.png', id:'itemPopP2'},
 			{src:'assets/button_confirm.png', id:'buttonConfirm'},
 			{src:'assets/button_cancel.png', id:'buttonCancel'},
 			{src:'assets/button_fullscreen.png', id:'buttonFullscreen'},

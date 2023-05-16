@@ -249,7 +249,7 @@ var textDisplay = {
 	gameLevel:"NIVEL : [NUMBER]",
 	multiplayerName:"P[NUMBER] : ",
 	multiplayerIndicator:"P[NUMBER]",
-	exitTitle:'Salir del juego',
+	exitTitle:'SALIR DEL JUEGO',
 	exitMessage:'¿Estás seguro de que\nquieres salir del juego?',
 	share:'Comparte tu puntuación:',
 	resultTitle:'FIN DEL JUEGO',

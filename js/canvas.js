@@ -213,8 +213,8 @@ function buildGameCanvas(){
 	touchContainer.addChild(touchMoveContainer);
 	
 	//result
-	itemResult = new createjs.Bitmap(loader.getResult('itemPop'));
-	itemResultP = new createjs.Bitmap(loader.getResult('itemPopP'));
+	itemResult = new createjs.Bitmap(loader.getResult('itemPop2'));
+	itemResultP = new createjs.Bitmap(loader.getResult('itemPopP2'));
 	
 	buttonContinue = new createjs.Bitmap(loader.getResult('buttonContinue'));
 	centerReg(buttonContinue);
@@ -227,15 +227,15 @@ function buildGameCanvas(){
 	resultShareTxt.text = textDisplay.share;
 	
 	resultTitleTxt = new createjs.Text();
-	resultTitleTxt.font = "60px Brandon_blk_it";
+	resultTitleTxt.font = "35px Brandon_blk_it";
 	resultTitleTxt.color = '#ff2221ff';
 	resultTitleTxt.textAlign = "center";
 	resultTitleTxt.textBaseline='alphabetic';
 	resultTitleTxt.text = textDisplay.resultTitle;
 	
 	resultDescTxt = new createjs.Text();
-	resultDescTxt.font = "65px Brandon_blk_it";
-	resultDescTxt.color = '#1b1950ff';
+	resultDescTxt.font = "85px Brandon_blk_it";
+	resultDescTxt.color = '#ff2221ff';
 	resultDescTxt.textAlign = "center";
 	resultDescTxt.textBaseline='alphabetic';
 	resultDescTxt.text = '';
@@ -292,16 +292,16 @@ function buildGameCanvas(){
 	centerReg(buttonCancel);
 	
 	popTitleTxt = new createjs.Text();
-	popTitleTxt.font = "60px Brandon_blk_it";
+	popTitleTxt.font = "35px Brandon_blk_it";
 	popTitleTxt.color = "#ff2221ff";
 	popTitleTxt.textAlign = "center";
 	popTitleTxt.textBaseline='alphabetic';
 	popTitleTxt.text = textDisplay.exitTitle;
 	
 	popDescTxt = new createjs.Text();
-	popDescTxt.font = "40px Brandon_blk_it";
+	popDescTxt.font = "45px Brandon_regular";
 	popDescTxt.lineHeight = 45;
-	popDescTxt.color = "#ff2221ff";
+	popDescTxt.color = "#1b1950ff";
 	popDescTxt.textAlign = "center";
 	popDescTxt.textBaseline='alphabetic';
 	popDescTxt.text = textDisplay.exitMessage;
@@ -338,7 +338,7 @@ function buildGameCanvas(){
 		resultContainer.addChild(resultShareTxt, buttonFacebook, buttonTwitter, buttonWhatsapp);
 	}
 	
-	canvasContainer.addChild(bg2,bgP2, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, abbott,guideline);
+	canvasContainer.addChild(bg2,bgP2,abbott, mainContainer, mapContainer, selectContainer, gameContainer, gameLogsTxt, resultContainer, confirmContainer, optionsContainer, buttonSettings, guideline);
 	stage.addChild(canvasContainer);
 	
 	changeViewport(viewport.isLandscape);
@@ -381,7 +381,7 @@ function changeCanvasViewport(){
 			logoP.visible = false;
 
 			buttonStart.x = canvasW/2;
-			buttonStart.y = canvasH/100 * 75;
+			buttonStart.y = canvasH/100 * 30;
 
 			buttonLocal.x = canvasW/2 - 120;
 			buttonLocal.y = canvasH/100 * 75;
@@ -425,10 +425,10 @@ function changeCanvasViewport(){
 			resultShareTxt.y = canvasH/100 * 49;
 	
 			resultTitleTxt.x = canvasW/2;
-			resultTitleTxt.y = canvasH/100 * 35;
+			resultTitleTxt.y = canvasH/100 * 45;
 	
 			resultDescTxt.x = canvasW/2;
-			resultDescTxt.y = canvasH/100 * 44;
+			resultDescTxt.y = canvasH/100 * 55;
 			
 			//exit
 			itemExit.visible = true;
@@ -441,10 +441,10 @@ function changeCanvasViewport(){
 			buttonCancel.y = (canvasH/100 * 68);
 
 			popTitleTxt.x = canvasW/2;
-			popTitleTxt.y = canvasH/100 * 35;
+			popTitleTxt.y = canvasH/100 * 45;
 			
 			popDescTxt.x = canvasW/2;
-			popDescTxt.y = canvasH/100 * 45;
+			popDescTxt.y = canvasH/100 * 55;
 
 			//room
 			$('#roomWrapper').removeClass('forPortrait');
