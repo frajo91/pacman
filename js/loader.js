@@ -27,6 +27,7 @@
 			{src:'assets/logo.png', id:'logo'},
 			{src:'assets/logo_p.png', id:'logoP'},
 			{src:'assets/Abbot_logo.png', id:'Abbott'},
+			{src:'assets/logo_pedialyte.png', id:'pedialyte'},
 			{src:'assets/button_start.png', id:'buttonStart'},
 			{src:'assets/button_local.png', id:'buttonLocal'},
 			{src:'assets/button_online.png', id:'buttonOnline'},

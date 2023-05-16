@@ -83,10 +83,10 @@ resize:vertical;
   
   }
 
-html{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-user-select: none;-webkit-touch-callout:none; background:#000;}
+html{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-user-select: none;-webkit-touch-callout:none; background:#fff;}
 
 /*-- Percent Loader -- */
-#mainLoader{position:absolute;z-index:5; display:none; font-size:35px; line-height:35px; color:#fff; text-align:center; width:100%; font-family:'Brandon_blk_it';/*background-image: url('../assets/background.png');height: 100%; max-width: 1280px; background-size: contain;*/}
+#mainLoader{position:absolute;z-index:5; display:none; font-size:35px; line-height:35px; color:#1b1950ff; text-align:center; width:100%; font-family:'Brandon_blk_it';/*background-image: url('../assets/background.png');height: 100%; max-width: 1280px; background-size: contain;*/}
 
 /*-- Content Wrapper -- */
 #mainHolder{position:absolute; width:100%;height:100%;}

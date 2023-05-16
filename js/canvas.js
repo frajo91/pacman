@@ -78,6 +78,8 @@ function buildGameCanvas(){
 
 	abbott=new createjs.Bitmap(loader.getResult('Abbott'));
 
+	pedialyte=new createjs.Bitmap(loader.getResult('pedialyte'));
+
 
 	buttonStart = new createjs.Bitmap(loader.getResult('buttonStart'));
 	centerReg(buttonStart);
@@ -326,7 +328,7 @@ function buildGameCanvas(){
 	}
 	
 	buttonLocalContainer.addChild(buttonLocal, buttonOnline);
-	mainContainer.addChild(bg, bgP,logo, logoP, buttonStart, buttonLocalContainer);
+	mainContainer.addChild(bg, bgP,logo, logoP, buttonStart, buttonLocalContainer,pedialyte);
 	//selectContainer.addChild(buttonLeft, buttonRight, buttonLeftSmall, buttonRightSmall, buttonSelect);
 	selectContainer.addChild(buttonLeft, buttonRight, buttonSelect);
 	mapWrapContainer.addChild(mapDrawContainer, mapIconsContainer, mapCollectContainer, mapPlayersContainer, mapLabelsContainer);
@@ -377,11 +379,11 @@ function changeCanvasViewport(){
 			bgP.visible = false;
 			bgP2.visible = false;
 
-			logo.visible = true;
+			logo.visible = false;
 			logoP.visible = false;
 
 			buttonStart.x = canvasW/2;
-			buttonStart.y = canvasH/100 * 30;
+			buttonStart.y = canvasH/100 * 31;
 
 			buttonLocal.x = canvasW/2 - 120;
 			buttonLocal.y = canvasH/100 * 75;
@@ -459,10 +461,10 @@ function changeCanvasViewport(){
 			bgP2.visible = true;
 
 			logo.visible = false;
-			logoP.visible = true;
+			logoP.visible = false;
 
 			buttonStart.x = canvasW/2;
-			buttonStart.y = canvasH/100 * 75;
+			buttonStart.y = canvasH/100 * 80;
 
 			buttonLocal.x = canvasW/2;
 			buttonLocal.y = canvasH/100 * 73;
@@ -552,6 +554,9 @@ function resizeCanvas(){
 
 		abbott.x=offset.x+50;
 		abbott.y=offset.y + 45;
+
+		pedialyte.x=offset.x+50;
+		pedialyte.y=offset.y + 45;
 		
 		var distanceNum = 60;
 		var nextCount = 0;
