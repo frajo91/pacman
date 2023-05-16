@@ -109,20 +109,20 @@ function buildGameCanvas(){
 	//game
 	gameStatusTxt = new createjs.Text();
 	gameStatusTxt.font = "50px Brandon_blk_it";
-	gameStatusTxt.color = "#ff2221ff";
+	gameStatusTxt.color = "#c21f2eff";
 	gameStatusTxt.textAlign = "center";
 	gameStatusTxt.textBaseline='alphabetic';
 
 	gameScoreTxt = new createjs.Text();
 	gameScoreTxt.font = "25px Brandon_blk_it";
-	gameScoreTxt.color = '#ff2221ff';
+	gameScoreTxt.color = '#c21f2eff';
 	gameScoreTxt.textAlign = "center";
 	gameScoreTxt.textBaseline='alphabetic';
 	gameScoreTxt.text = '';
 
 	gameLevelTxt = new createjs.Text();
 	gameLevelTxt.font = "25px Brandon_blk_it";
-	gameLevelTxt.color = '#ff2221ff';
+	gameLevelTxt.color = '#c21f2eff';
 	gameLevelTxt.textAlign = "center";
 	gameLevelTxt.textBaseline='alphabetic';
 	gameLevelTxt.text = '';
@@ -167,13 +167,13 @@ function buildGameCanvas(){
 
 		$.players["name" + n] = new createjs.Text();
 		$.players["name" + n].font = "25px Brandon_blk_it";
-		$.players["name" + n].color = "#ff2221ff";
+		$.players["name" + n].color = "#c21f2eff";
 		$.players["name" + n].textAlign = isEven(n) == true ? "left" : "right";
 		$.players["name" + n].textBaseline='alphabetic';
 
 		$.players["score" + n] = new createjs.Text();
 		$.players["score" + n].font = "25px Brandon_blk_it";
-		$.players["score" + n].color = "#ff2221ff";
+		$.players["score" + n].color = "#c21f2eff";
 		$.players["score" + n].textAlign = isEven(n) == true ? "left" : "right";
 		$.players["score" + n].textBaseline='alphabetic';
 
@@ -223,21 +223,21 @@ function buildGameCanvas(){
 	
 	resultShareTxt = new createjs.Text();
 	resultShareTxt.font = "35px Brandon_blk_it";
-	resultShareTxt.color = '#ff2221ff';
+	resultShareTxt.color = '#c21f2eff';
 	resultShareTxt.textAlign = "center";
 	resultShareTxt.textBaseline='alphabetic';
 	resultShareTxt.text = textDisplay.share;
 	
 	resultTitleTxt = new createjs.Text();
 	resultTitleTxt.font = "35px Brandon_blk_it";
-	resultTitleTxt.color = '#ff2221ff';
+	resultTitleTxt.color = '#c21f2eff';
 	resultTitleTxt.textAlign = "center";
 	resultTitleTxt.textBaseline='alphabetic';
 	resultTitleTxt.text = textDisplay.resultTitle;
 	
 	resultDescTxt = new createjs.Text();
 	resultDescTxt.font = "85px Brandon_blk_it";
-	resultDescTxt.color = '#ff2221ff';
+	resultDescTxt.color = '#c21f2eff';
 	resultDescTxt.textAlign = "center";
 	resultDescTxt.textBaseline='alphabetic';
 	resultDescTxt.text = '';
@@ -295,7 +295,7 @@ function buildGameCanvas(){
 	
 	popTitleTxt = new createjs.Text();
 	popTitleTxt.font = "35px Brandon_blk_it";
-	popTitleTxt.color = "#ff2221ff";
+	popTitleTxt.color = "#c21f2eff";
 	popTitleTxt.textAlign = "center";
 	popTitleTxt.textBaseline='alphabetic';
 	popTitleTxt.text = textDisplay.exitTitle;
@@ -508,10 +508,10 @@ function changeCanvasViewport(){
 			resultShareTxt.y = canvasH/100 * 49;
 	
 			resultTitleTxt.x = canvasW/2;
-			resultTitleTxt.y = canvasH/100 * 38;
+			resultTitleTxt.y = canvasH/100 * 48;
 	
 			resultDescTxt.x = canvasW/2;
-			resultDescTxt.y = canvasH/100 * 45;
+			resultDescTxt.y = canvasH/100 * 55;
 			
 			//exit
 			itemExit.visible = false;
@@ -524,10 +524,10 @@ function changeCanvasViewport(){
 			buttonCancel.y = (canvasH/100 * 64);
 
 			popTitleTxt.x = canvasW/2;
-			popTitleTxt.y = canvasH/100 * 38;
+			popTitleTxt.y = canvasH/100 * 48;
 			
 			popDescTxt.x = canvasW/2;
-			popDescTxt.y = canvasH/100 * 48;
+			popDescTxt.y = canvasH/100 * 53;
 
 			//room
 			$('#roomWrapper').addClass('forPortrait');
