@@ -11,9 +11,9 @@
 //themes
 var theme_settings = [
 	{
-		strokeColor:"#1b1950ff",
-		biscuitColor:"#ff2221ff",
-		pillColor:"#ff2221ff",
+		strokeColor:"#36cff2ff",
+		biscuitColor:"#fedd02ff",
+		pillColor:"#fedd02ff",
 		gateColor:"#e4e6af",
 		user:["assets/item_theme8_user.png"],
 		ghosts:[
